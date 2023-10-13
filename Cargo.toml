@@ -1,0 +1,19 @@
+[package]
+name = "rest-mongodb-rust"
+version = "0.1.0"
+authors = ["Fabrice Fourel <ffourel@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+serde = "1.0.136"
+tokio = "1.28.0"
+dotenv = "0.15.0"
+futures = "0.3"
+
+[dependencies.mongodb]
+version = "2.2.0"
+default-features = false
+features = ["async-std-runtime"]
